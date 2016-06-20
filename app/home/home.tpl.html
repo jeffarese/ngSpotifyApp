@@ -1,2 +1,15 @@
-<h2>home</h2>
-<p>{{home.ctrlName}}</p>
+<md-toolbar>
+    <div class="md-toolbar-tools">
+        <h2>Angular Camp Music Searcher</h2>
+    </div>
+</md-toolbar>
+<md-content layout-padding>
+    <md-input-container>
+        <label>Search</label>
+        <input ng-model="home.songName">
+    </md-input-container>
+    <md-button class="md-raised md-primary" ng-click="home.searchSong(home.songName)">Search</md-button>
+</md-content>
+<song-thumbnail ng-repeat="song in home.songList" song="song">
+
+</song-thumbnail>

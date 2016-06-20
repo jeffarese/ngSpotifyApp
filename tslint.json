@@ -8,7 +8,7 @@
     "label-undefined": true,
     "max-line-length": [true, 140],
     "member-ordering": [
-      true,
+      false,
       "public-before-private",
       "variables-before-functions"
     ],
@@ -29,7 +29,7 @@
     "no-empty": true,
     "no-eval": true,
     "no-imports": true,
-    "no-trailing-comma": true,
+    "no-trailing-comma": false,
     "no-trailing-whitespace": true,
     "no-unreachable": true,
     "no-use-before-declare": true,
