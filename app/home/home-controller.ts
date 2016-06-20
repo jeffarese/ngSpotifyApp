@@ -29,6 +29,7 @@ module HomeCtrl {
         vm.songList = r.data.tracks.items;
       });
     }
+
   }
 
   /**

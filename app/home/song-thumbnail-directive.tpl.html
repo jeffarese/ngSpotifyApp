@@ -9,6 +9,9 @@
         </md-card-header-text>
     </md-card-header>
     <img ng-src="{{song.album.images[1].url}}" class="md-card-image" alt="Washed Out">
+    <md-button class="md-fab md-primary md-hue-2" ng-click="songThumbnail.playSong(song.preview_url)" aria-label="Profile">
+        <i class="ico-play"></i>
+    </md-button>
     <md-card-title>
         <md-card-title-text>
             <span class="md-title">{{song.name}}</span>

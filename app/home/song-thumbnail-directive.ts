@@ -20,11 +20,15 @@ module SongThumbnail {
   }
 
   export class SongThumbnailController {
-    public name: string;
     public static $inject: Array<string> = [];
 
     constructor() {
-      this.name = 'songThumbnail';
+      //
+    }
+
+    public playSong(previewUrl: string): void {
+      console.log(this);
+      new Audio(previewUrl).play();
     }
   }
 
