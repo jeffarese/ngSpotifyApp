@@ -10,6 +10,6 @@
     </md-input-container>
     <md-button class="md-raised md-primary" ng-click="home.searchSong(home.songName)">Search</md-button>
 </md-content>
-<song-thumbnail ng-repeat="song in home.songList" song="song">
-
-</song-thumbnail>
+<md-content layout-padding layout="row" layout-wrap>
+    <song-thumbnail ng-repeat="song in home.songList" song="song"></song-thumbnail>
+</md-content>

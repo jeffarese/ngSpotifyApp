@@ -4,15 +4,15 @@ module SongThumbnail {
 
   function SongThumbnailDirective(): ng.IDirective {
     return {
-      restrict: 'EA',
-      scope: {
-        song: '@'
+      restrict:     'EA',
+      scope:        {
+        song: '='
       },
-      templateUrl: 'home/song-thumbnail-directive.tpl.html',
-      replace: false,
+      templateUrl:  'home/song-thumbnail-directive.tpl.html',
+      replace:      false,
       controllerAs: 'songThumbnail',
-      controller: SongThumbnailController,
-      link: function (scope: ng.IScope, element: JQuery, attrs: any): void {
+      controller:   SongThumbnailController,
+      link:         function (scope: ng.IScope, element: JQuery, attrs: any): void {
         /*jshint unused:false */
         /*eslint "no-unused-vars": [2, {"args": "none"}]*/
       }
@@ -29,21 +29,21 @@ module SongThumbnail {
   }
 
   /**
-  * @ngdoc directive
-  * @name home.directive:songThumbnail
-  * @restrict EA
-  * @element
-  *
-  * @description
-  *
-  * @example
-  *   <example module="home">
-  *       <file name="index.html">
-  *           <song-thumbnail></song-thumbnail>
-  *       </file>
-  *   </example>
-  *
-  */
+   * @ngdoc directive
+   * @name home.directive:songThumbnail
+   * @restrict EA
+   * @element
+   *
+   * @description
+   *
+   * @example
+   *   <example module="home">
+   *       <file name="index.html">
+   *           <song-thumbnail></song-thumbnail>
+   *       </file>
+   *   </example>
+   *
+   */
   angular
     .module('home')
     .directive('songThumbnail', SongThumbnailDirective);

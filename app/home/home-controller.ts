@@ -23,9 +23,9 @@ module HomeCtrl {
 
     }
 
-    public searchSong(songName) {
-      let vm = this;
-      vm.songFinder.searchSong(songName).then(function(r) {
+    public searchSong(songName: string): void {
+      let vm: HomeCtrl = this;
+      vm.songFinder.searchSong(songName).then(function(r: any): void {
         vm.songList = r.data.tracks.items;
       });
     }
