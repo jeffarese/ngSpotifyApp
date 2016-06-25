@@ -2,11 +2,16 @@
 module HomeCtrl {
   'use strict';
 
+  interface ISong {
+    artists: Array<{name: string}>,
+    album: { images: Array<{ url: string }> },
+    song: string,
+  }
 
   class HomeCtrl {
 
     private songFinder: SongFinder.SongFinder;
-    public songList;
+    public songList: Array<ISong>;
 
     // $inject annotation.
     // It provides $injector with information about dependencies to be injected into constructor
@@ -19,14 +24,21 @@ module HomeCtrl {
     // dependencies are injected via AngularJS $injector
     constructor(SongFinder: SongFinder.SongFinder) {
       this.songFinder = SongFinder;
+    }
 
+    private setSongList(songList: Array<ISong>): void {
+      this.songList = songList;
     }
 
     public searchSong(songName: string): void {
       let vm: HomeCtrl = this;
-      vm.songFinder.searchSong(songName).then(function(r: any): void {
-        vm.songList = r.data.tracks.items;
-      });
+      if (songName) {
+        vm.songFinder.searchSong(songName).then(function (r: any): void {
+          vm.setSongList(r.data.tracks.items);
+        });
+      } else {
+        vm.setSongList(null);
+      }
     }
 
   }
