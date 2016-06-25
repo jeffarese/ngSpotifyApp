@@ -1,9 +1,16 @@
 .song-thubmnail {
 	& {
+		max-width: 316px;
 		position: relative;
 	}
 	img {
 		max-width: 300px;
+	}
+	.md-title {
+		max-width: 284px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 	.ico-play {
 		position: absolute;

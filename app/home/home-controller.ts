@@ -6,7 +6,6 @@ module HomeCtrl {
   class HomeCtrl {
 
     private songFinder: SongFinder.SongFinder;
-    public songName: string;
     public songList;
 
     // $inject annotation.

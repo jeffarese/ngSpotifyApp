@@ -12,7 +12,7 @@ module SongFinder {
       this.$http = $http;
     }
 
-    public searchSong(songName): ng.IHttpPromise<any> {
+    public searchSong(songName: string): ng.IHttpPromise<any> {
       return this.$http({
         params: {
           query: songName,

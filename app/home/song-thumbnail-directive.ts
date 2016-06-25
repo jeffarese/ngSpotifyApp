@@ -20,15 +20,43 @@ module SongThumbnail {
   }
 
   export class SongThumbnailController {
-    public static $inject: Array<string> = [];
+    public static $inject: Array<string> = [
+      '$rootScope'
+    ];
+    public isPlaying: boolean;
+    private music: any;
+    private $rootScope: ng.IRootScopeService;
 
-    constructor() {
-      //
+    constructor($rootScope: ng.IRootScopeService) {
+      let vm: SongThumbnailController = this;
+      vm.$rootScope = $rootScope;
+      vm.music = undefined;
+      vm.$rootScope.$on('musicPlaying', function(): void {
+        if (vm.isSongPlaying()) {
+          vm.stopPlaying();
+        }
+      });
     }
 
     public playSong(previewUrl: string): void {
-      console.log(this);
-      new Audio(previewUrl).play();
+      this.emitPlayingEvent();
+      this.music = new Audio(previewUrl);
+      this.music.play();
+    }
+
+    public stopPlaying(): void {
+      if (this.isSongPlaying()) {
+        this.music.pause();
+        this.music = undefined;
+      }
+    }
+
+    private emitPlayingEvent(): void {
+      this.$rootScope.$broadcast('musicPlaying');
+    }
+
+    public isSongPlaying(): boolean {
+      return this.music !== undefined;
     }
   }
 

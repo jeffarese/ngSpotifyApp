@@ -6,7 +6,7 @@ module myApp {
     .module('myApp')
     .config(config);
 
-  function config($urlRouterProvider: ng.ui.IUrlRouterProvider) {
+  function config($urlRouterProvider: ng.ui.IUrlRouterProvider): void {
     $urlRouterProvider.otherwise('/home');
   }
 }
