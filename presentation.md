@@ -1,5 +1,6 @@
 <!-- $theme: gaia -->
 <!-- template: invert -->
+class: center, middle
 
 Spotify Song Player
 ===
@@ -22,3 +23,22 @@ Spotify Song Player
 ---
 
 # Initial setup
+1. Install [Node.js](http://nodejs.org/)
+ - This will also install npm.
+1. Run `npm install -g bower gulp yo generator-ng-poly`
+ - This enables Bower, Gulp, and Yeoman generators to be used from command line.
+1. Run `npm install` to install this project's dependencies
+1. Run `bower install` to install client-side dependencies
+1. ???
+1. Profit!
+---
+# Scaffolding the app
+Open a terminal, go to your desired folder and type:
+
+`yo ng-poly`
+
+· Angular version: `1.4.*`
+Structure: First options
+`HTML`
+`TypeScript`
+`Controll`
