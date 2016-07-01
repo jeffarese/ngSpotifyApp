@@ -67,7 +67,7 @@ Navigate to the created folder in your terminal and type:
 
 Will generate:
 
-```javascript
+``` javascript
 ///<reference path='../../typings/tsd.d.ts' />
 module SongThumbnail {
   'use strict';

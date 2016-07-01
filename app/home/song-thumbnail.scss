@@ -1,10 +1,14 @@
 .song-thubmnail {
 	& {
-		max-width: 316px;
+		width: 316px;
+
 		position: relative;
 	}
 	img {
 		max-width: 300px;
+	}
+	md-card-header {
+		min-height: 56px;
 	}
 	.md-title {
 		max-width: 284px;
