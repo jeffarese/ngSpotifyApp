@@ -34,7 +34,7 @@ Open a terminal, go to your desired folder and type:
 
 Angular version: `1.4.*`
 
-![](/home/jeff/Escritorio/yeoscreen.png)
+![](http://i.imgur.com/dh9sb49.png)
 ---
 # Starting up!
 
