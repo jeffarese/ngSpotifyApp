@@ -8,9 +8,7 @@ Spotify Song Player
 
 #### Jeff Arese
 #### ![](https://g.twimg.com/dev/documentation/image/Twitter_logo_blue_48.png) @jeffarese
-
 ---
-
 # Technology stack
 
 <img src="https://avatars0.githubusercontent.com/u/139426?v=3&s=400" width="200">
@@ -18,9 +16,7 @@ Spotify Song Player
 <img src="http://mauriciocorrea.es/dist/img/logo-sass.png" width="200">
 <img src="https://worldvectorlogo.com/logos/gulp.svg" height="200">
 <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/Yeoman.svg/543px-Yeoman.svg.png" width="200">
-
 ---
-
 # Initial setup
 1. Install [Node.js](http://nodejs.org/)
  - This will also install npm.
@@ -50,17 +46,13 @@ Should Polymer be enabled?: `No`
 Framework setup: `Angular Material`
 ngRoute instead of UI Router: `No`
 Additional Bower components: None
-
 ---
-
 # Starting up!
 
 Navigate to the created folder in your terminal and type:
 
 `gulp`
-
 ---
-
 # Creating our first directive
 
 `yo ng-poly:directive songThubmnail`
@@ -173,8 +165,6 @@ module SongFinder {
 }
 ```
 ---
-
-
 # Preparing our controller
 Creating the Song Interface
 ``` javascript
@@ -202,9 +192,7 @@ constructor(SongFinder: SongFinder.SongFinder) {
   this.songFinder = SongFinder;
 }
 ```
-
 ---
-
 # Adding search functionality
 Inside our controller:
 ``` javascript
@@ -280,5 +268,4 @@ module SongThumbnail {
 }
 ```
 ---
-
 # Now let's see it in action!
