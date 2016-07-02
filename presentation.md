@@ -33,19 +33,8 @@ Open a terminal, go to your desired folder and type:
 `yo ng-poly`
 
 Angular version: `1.4.*`
-Structure: First option
-Markup language: `HTML`
-Scripting language: `TypeScript`
-Controller As: `Yes`
-Directives using templateUrl: `Yes`
-Testing language: `TypeScript`
-Unit Testing framework: `Jasmine`
-E2E Testing framework: `Jasmine`
-Style language: `SCSS`
-Should Polymer be enabled?: `No`
-Framework setup: `Angular Material`
-ngRoute instead of UI Router: `No`
-Additional Bower components: None
+
+![](/home/jeff/Escritorio/yeoscreen.png)
 ---
 # Starting up!
 
@@ -268,4 +257,5 @@ module SongThumbnail {
 }
 ```
 ---
+
 # Now let's see it in action!
