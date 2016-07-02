@@ -6,7 +6,7 @@ module home {
     .module('home')
     .config(config)
 
-  function config($stateProvider: ng.ui.IStateProvider) {
+  function config($stateProvider: ng.ui.IStateProvider): void {
     $stateProvider
       .state('home', {
         url: '/home',

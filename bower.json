@@ -1,12 +1,12 @@
 {
-  "name": "myApp",
+  "name": "my-app",
   "version": "0.0.0",
   "dependencies": {
     "angular": "~1.4.*",
     "angular-ui-router": "~0.2.10",
-    "angular-material": "~0.10.0"
+    "angular-material": "^1.0.9"
   },
-  "devDependencies": {
+  "dev-dependencies": {
     "angular-mocks": "~1.4.*"
   }
 }
